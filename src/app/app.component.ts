@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  name: string;
+  greeting = 'Welcome!!';
+
+  greet(): void {
+    this.greeting = this.name !== null ? `Welcome ${this.name}!!` : 'Welcome!!';
+  }
 }
