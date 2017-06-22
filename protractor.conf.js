@@ -7,7 +7,7 @@ exports.config = {
     './e2e/features/**/*.feature'
   ],
   capabilities: {
-    'browserName': 'chrome',
+    'browserName': 'phantomjs',
     'phantomjs.binary.path':'./node_modules/phantomjs-prebuilt/bin/phantomjs'
   },
   directConnect: false,
