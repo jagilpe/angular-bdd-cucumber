@@ -30,6 +30,8 @@
     "@angular/cli": "1.1.1",
     "@angular/compiler-cli": "^4.0.0",
     "@angular/language-service": "^4.0.0",
+    "@types/chai": "^4.0.0",
+    "@types/chai-as-promised": "0.0.31",
     "@types/jasmine": "2.5.45",
     "@types/node": "~6.0.60",
     "chai": "^4.0.2",
