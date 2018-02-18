@@ -7,8 +7,10 @@ exports.config = {
     './e2e/features/**/*.feature'
   ],
   capabilities: {
-    'browserName': 'phantomjs',
-    'phantomjs.binary.path':'./node_modules/phantomjs-prebuilt/bin/phantomjs'
+    'browserName': 'chrome',
+    'chromeOptions': {
+      'args': [ "--headless", "--disable-gpu", "--window-size=800,600" ]
+    }
   },
   directConnect: false,
   baseUrl: 'http://localhost:4200/',
@@ -18,7 +20,7 @@ exports.config = {
     require: ['./e2e/**/*.ts'],
     tags: [],
     strict: true,
-    format: ["pretty"],
+    format: ["progress"],
     dryRun: false,
     compiler: [ 'ts:ts-node']
   },
